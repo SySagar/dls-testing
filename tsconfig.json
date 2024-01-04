@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "types",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*":["./src/components/*"],
+      "@lib/*":["./src/lib/*"],
+    }
+  }
+}
