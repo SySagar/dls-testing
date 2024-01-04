@@ -1,3 +1,3 @@
 import './tailwind.css'
 
-export * from '@components/ui'
+export * from './components/ui/index'
