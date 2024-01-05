@@ -22,7 +22,7 @@ module.exports = [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: true, 
+        extract: 'tailwind.css', 
         extends:['css'],
         module:false,
         plugins: [
@@ -37,7 +37,7 @@ module.exports = [
     ],
   },
   {
-    input: "dist/cjs/types/index.d.ts",
+    input: "dist/cjs/types/src/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "cjs" }],
     plugins: [dts.default()],
     external: [/\.css$/],
